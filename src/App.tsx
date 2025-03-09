@@ -3,10 +3,11 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Event from "./pages/Event";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <Router>
+    <div>
       <nav>
         <ul>
           <li>
@@ -21,9 +22,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/event" element={<Event />} />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 
