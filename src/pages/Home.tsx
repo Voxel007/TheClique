@@ -8,6 +8,9 @@ const Home: React.FC = () => {
       <li>
         <Link to="/event">Link From Home to Event</Link>
       </li>
+      <div className="rounded-lg bg-yellow-300 p-6 text-red-500 shadow-md">
+        Tailwind Sorting Test
+      </div>
     </div>
   );
 };
