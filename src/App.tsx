@@ -13,14 +13,15 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/event">About</Link>
+            <Link to="/event">Event</Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/event" element={<Event />} />
-        {/* <Route path="*" element={<NoPage />} /> */}
+
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   );
