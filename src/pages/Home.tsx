@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EventCard from "../components/EventCard";
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,9 @@ const Home: React.FC = () => {
       <h2>Find Amazing Events near you</h2>
       <h6>12 Events around you</h6>
       <div>SearchBar</div>
+      <h2>Events Hosted by your Friends</h2>
+      <h2>Professional Events</h2>
+      <EventCard></EventCard>
 
       <li>
         <Link to="/event">Link From Home to Event</Link>
