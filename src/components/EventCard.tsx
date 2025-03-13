@@ -12,7 +12,7 @@ function EventCard({ title, location, imageURL }: EventCardProps) {
   imageURL = "src/assets/EventThumbnails/PoolPicture.jpg";
 
   return (
-    <main className="text-lefttransform h-70 w-60 flex-col rounded-2xl bg-white pt-0.75 transition-transform hover:scale-102">
+    <main className="text-left transform h-70 w-60 flex-col rounded-2xl bg-white pt-0.75 transition-transform hover:scale-102">
       <img
         src={imageURL}
         className="aspect-[4/3] w-full scale-90 rounded-2xl object-cover"
