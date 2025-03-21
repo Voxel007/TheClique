@@ -10,16 +10,23 @@ function DateLocationCard({ location, date }: EventCardProps) {
   date = "Dec 30, 2024";
 
   return (
-    <div className="my-1 flex h-10 w-full justify-around rounded-lg bg-gray-500">
-      <section className="">
-        <h4 className="text-gray-400">Date</h4>
-        <h5 className="text-white">{date}</h5>
-      </section>
-      {/* vertical bar */}
-      <div className="h10 w10 rounded-2xl bg-amber-800"></div>
-      <section>
-        <h4 className="text-gray-400">Location</h4>
-        <h5 className="text-white">{location}</h5>
+    <div className="my-1 h-9 w-full rounded-lg bg-gray-500">
+      <section className="flex h-full w-full justify-around p-1">
+        <section>
+          <h6 className="text-gray-400">Date</h6>
+          <h4 className="text-white">{date}</h4>
+        </section>
+        {/* vertical bar */}
+        <section className="flex items-center">
+          <div className="h-full w-0.5 rounded-2xl bg-gray-400"> </div>
+        </section>
+
+        {/* Parent */}
+        <section>
+          <h6 className="text-gray-400">Location</h6>
+          {/* Child */}
+          <h4 className="whitespace-nowrap text-white">{location}</h4>
+        </section>
       </section>
     </div>
   );
