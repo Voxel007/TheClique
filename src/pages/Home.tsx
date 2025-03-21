@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EventCard from "../components/Cards/EventCard";
 import SearchBar from "../components/SearchBar";
-
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Home: React.FC = () => {
   return (
     <div className="flex justify-center">
@@ -13,7 +13,8 @@ const Home: React.FC = () => {
             <section className="flex-col px-2 text-left">
               <h2 className="pd+2 text-white">Hi Alexander</h2>
               <section className="flex">
-                <h4>Cologne iodf</h4>
+                <LocationOnIcon sx={{ fontSize: 12 }} />
+                <h4>Cologne</h4>
               </section>
             </section>
           </section>
