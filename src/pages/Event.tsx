@@ -34,6 +34,9 @@ const Event: React.FC = () => {
           <button className="rounded-lg bg-gray-500 px-4 text-white hover:bg-gray-600">
             unsure
           </button>
+          <button className="rounded-lg bg-gray-500 px-4 text-white hover:bg-gray-600">
+            View Network
+          </button>
         </section>
       </section>
     </div>
