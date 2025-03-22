@@ -1,11 +1,12 @@
 import React from "react";
-import DateLocationCard from "./DateLocationCard";
+// import DateLocationCard from "./DateLocationCard";
+import MessageIcon from "@mui/icons-material/Message";
 
 interface EventCardProps {}
 
 function OrganizerCardWide({}: EventCardProps) {
   return (
-    <div className="my-1 flex h-10 w-60 items-center justify-between rounded-2xl bg-white p-1">
+    <div className="flex h-10 w-60 items-center justify-around rounded-2xl bg-white text-left">
       <img
         src="src\assets\ProfilePictures\Avatar.svg"
         className="scale-50"
@@ -14,7 +15,7 @@ function OrganizerCardWide({}: EventCardProps) {
         <h4>Organizer</h4>
         <h3>Max Musterman</h3>
       </section>
-      <h6>logos</h6>
+      <MessageIcon sx={{ fontSize: 12 }} />
     </div>
   );
 }
