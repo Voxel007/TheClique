@@ -6,16 +6,18 @@ interface EventCardProps {}
 
 function OrganizerCardWide({}: EventCardProps) {
   return (
-    <div className="flex h-10 w-60 items-center justify-around rounded-2xl bg-white text-left">
-      <img
-        src="src\assets\ProfilePictures\Avatar.svg"
-        className="scale-50"
-      ></img>
-      <section>
-        <h4>Organizer</h4>
-        <h3>Max Musterman</h3>
+    <div className="flex h-10 w-60 flex-row items-center justify-between rounded-2xl bg-white text-left">
+      {/* Left Side */}
+      <section className="flex flex-row items-center pl-2">
+        <img src="src/assets/ProfilePictures/Avatar.svg" className="h-8" />
+        <section className="ml-2">
+          <h4 className="text-sm">Organizer</h4>
+          <h3 className="text-base">Max Musterman</h3>
+        </section>
       </section>
-      <MessageIcon sx={{ fontSize: 12 }} />
+
+      {/* Right Side */}
+      <MessageIcon sx={{ fontSize: 20 }} className="pr-2" />
     </div>
   );
 }
